@@ -21,8 +21,44 @@ export const Route = createFileRoute("/events")({
         content:
           "Join TICAdvisor at trade shows, technical webinars and training workshops on testing, inspection and certification.",
       },
+      { property: "og:url", content: "/events" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Events & Webinars — TICAdvisor" },
+      {
+        name: "twitter:description",
+        content:
+          "Join TICAdvisor at trade shows, technical webinars and training workshops on testing, inspection and certification.",
+      },
+    ],
+    links: [{ rel: "canonical", href: "/events" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": UPCOMING.map((event) => ({
+            "@type": event.type === "Webinar" ? "OnlineEvent" : "Event",
+            name: event.title,
+            startDate: event.startDate,
+            eventAttendanceMode:
+              event.type === "Webinar"
+                ? "https://schema.org/OnlineEventAttendanceMode"
+                : "https://schema.org/OfflineEventAttendanceMode",
+            eventStatus: "https://schema.org/EventScheduled",
+            location:
+              event.type === "Webinar"
+                ? { "@type": "VirtualLocation", url: "/contact" }
+                : {
+                    "@type": "Place",
+                    name: event.location,
+                    address: event.location,
+                  },
+            organizer: { "@type": "Organization", name: "TICAdvisor" },
+            url: "/events",
+          })),
+        }),
+      },
     ],
   }),
   component: EventsPage,
@@ -31,31 +67,43 @@ export const Route = createFileRoute("/events")({
 const UPCOMING = [
   {
     date: "18 September 2026",
+    startDate: "2026-09-18T14:00:00+02:00",
     type: "Webinar",
     title: "New EU food contact material rules: what changes for exporters",
     location: "Online — 14:00 CET",
-    image: "/food-testing.png",
+    image: "/food-testing.webp",
+    imageWidth: 599,
+    imageHeight: 447,
   },
   {
     date: "07 October 2026",
+    startDate: "2026-10-07",
     type: "Trade show",
     title: "Global Textiles & Apparel Compliance Summit",
     location: "Dhaka, Bangladesh",
     image: "/leather.jpg",
+    imageWidth: 640,
+    imageHeight: 425,
   },
   {
     date: "22 October 2026",
+    startDate: "2026-10-22",
     type: "Workshop",
     title: "Hands-on supplier audit training for quality managers",
     location: "Singapore",
-    image: "/training.jpg",
+    image: "/training.webp",
+    imageWidth: 900,
+    imageHeight: 601,
   },
   {
     date: "12 November 2026",
+    startDate: "2026-11-12T10:00:00Z",
     type: "Webinar",
     title: "Carbon verification: preparing for mandatory reporting",
     location: "Online — 10:00 GMT",
-    image: "/certification.jpg",
+    image: "/certification.webp",
+    imageWidth: 900,
+    imageHeight: 683,
   },
 ];
 
@@ -91,7 +139,10 @@ function EventsPage() {
                     <img
                       src={event.image}
                       alt={event.title}
+                      width={event.imageWidth}
+                      height={event.imageHeight}
                       loading="lazy"
+                      decoding="async"
                       className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>

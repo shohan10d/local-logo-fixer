@@ -11,3 +11,7 @@
 ## Local asset portability
 
 - Keep client logos as ordinary files under `public/client-logos`; this ensures localhost and external editors work without Lovable CDN access.
+
+## Search metadata architecture
+
+- Keep shared Organization/WebSite JSON-LD in the root route and unique canonical, social URL, title, and description metadata in each public leaf route; this prevents duplicate page identity signals.

@@ -25,9 +25,17 @@ export const Route = createFileRoute("/")({
         content:
           "Expert testing, inspection and certification services that protect your brand and secure your supply chain worldwide.",
       },
+      { property: "og:url", content: "/" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "TIC Advisor — Quality Assurance Worldwide" },
+      {
+        name: "twitter:description",
+        content:
+          "Expert testing, inspection and certification services that protect your brand and secure your supply chain worldwide.",
+      },
     ],
+    links: [{ rel: "canonical", href: "/" }],
   }),
   component: Index,
 });

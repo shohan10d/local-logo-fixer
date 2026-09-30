@@ -22,9 +22,17 @@ export const Route = createFileRoute("/about")({
         content:
           "Who we are: a global testing, inspection and certification partner helping companies prove quality, safety and compliance.",
       },
+      { property: "og:url", content: "/about" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "About TIC Advisor — Our Mission & Global Network" },
+      {
+        name: "twitter:description",
+        content:
+          "Who we are: a global testing, inspection and certification partner helping companies prove quality, safety and compliance.",
+      },
     ],
+    links: [{ rel: "canonical", href: "/about" }],
   }),
   component: AboutPage,
 });
@@ -108,10 +116,13 @@ function AboutPage() {
           <FadeInUp animation="animate-slide-in-right">
             <div className="overflow-hidden rounded-xl shadow-card">
               <img
-                src="/inspection.jpg"
+                src="/inspection.webp"
                 alt="TICAdvisor inspector reviewing product quality on site"
+                width={950}
+                height={352}
                 className="h-full w-full object-cover"
                 loading="lazy"
+                decoding="async"
               />
             </div>
           </FadeInUp>
