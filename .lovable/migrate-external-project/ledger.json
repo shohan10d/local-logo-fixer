@@ -4,15 +4,15 @@
       "capability": "application code",
       "source": "uploaded code archive",
       "outcome": "import",
-      "status": "implemented",
-      "next_action": "verify preview"
+      "status": "verified",
+      "next_action": "none"
     },
     {
       "capability": "client logo assets",
       "source": "Lovable asset pointers",
       "outcome": "convert to local public files",
-      "status": "implemented",
-      "next_action": "verify preview"
+      "status": "verified",
+      "next_action": "none"
     },
     {
       "capability": "database and records",
@@ -39,8 +39,8 @@
       "capability": "routes and static assets",
       "source": "uploaded code archive",
       "outcome": "preserve",
-      "status": "in_progress",
-      "next_action": "verify preview"
+      "status": "verified",
+      "next_action": "none"
     }
   ]
 }
