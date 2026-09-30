@@ -1,0 +1,18 @@
+[
+  {
+    "title": "SERVICES",
+    "links": ["Testing", "Inspection", "Certification & Auditing", "Advisory & Consulting"]
+  },
+  {
+    "title": "INDUSTRIES",
+    "links": ["Agriculture & Food", "Consumer Goods", "Energy & Resources", "Industrial & Manufacturing"]
+  },
+  {
+    "title": "COMPANY",
+    "links": ["About TIC Advisor", "Global Network", "Events & Webinars", "Careers"]
+  },
+  {
+    "title": "SUPPORT",
+    "links": ["Contact Us", "Request a Quote", "Verify a Certificate", "Customer Login"]
+  }
+]
