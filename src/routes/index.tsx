@@ -1,24 +1,44 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import Hero from "../components/Hero";
+import InfoCards from "../components/InfoCards";
+import ServicesSection from "../components/ServicesSection";
+import ActOnIt from "../components/ActOnIt";
+import Partners from "../components/Partners";
+import DecisionPlatform from "../components/DecisionPlatform";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "TIC Advisor — Quality Assurance Worldwide" },
+      {
+        name: "description",
+        content:
+          "Expert testing, inspection and certification services that protect your brand and secure your supply chain worldwide.",
+      },
+      {
+        property: "og:title",
+        content: "TIC Advisor — Quality Assurance Worldwide",
+      },
+      {
+        property: "og:description",
+        content:
+          "Expert testing, inspection and certification services that protect your brand and secure your supply chain worldwide.",
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <Hero />
+      <InfoCards />
+      <ServicesSection />
+      <ActOnIt />
+      <Partners />
+      <DecisionPlatform />
+    </>
   );
 }

@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Food Testing",
+    "gradient": "bg-linear-to-br from-brand-blue to-accent",
+    "image": "images/food_testing_gen.png",
+    "caption": "Gain accurate insights into the safety and quality of food products with advanced analytical capabilities."
+  },
+  {
+    "title": "Leather and Footwear",
+    "gradient": "bg-linear-to-bl from-accent to-brand-cyan",
+    "image": "leather.jpg",
+    "caption": "Comprehensive testing and quality assurance services for leather goods to meet rigorous market standards."
+  },
+  {
+    "title": "Environmental Testing",
+    "gradient": "bg-linear-to-tr from-brand-blue to-brand-green",
+    "image": "inspection.jpg",
+    "caption": "Assisting enterprises in proactively managing and mitigating their environmental impact through accurate analysis."
+  },
+  {
+    "title": "Mineral and Metal Services",
+    "gradient": "bg-linear-to-br from-gray-700 to-gray-500",
+    "image": "certification.jpg",
+    "caption": "End-to-end services encompassing exploration, mining, trading, smelting, and recycling quality control."
+  },
+  {
+    "title": "Petroleum Product Testing",
+    "gradient": "bg-linear-to-bl from-brand-blue-light to-brand-blue",
+    "image": "training.jpg",
+    "caption": "Specialized testing for petroleum chemicals, providing crucial support across manufacturing and petrochemicals."
+  },
+  {
+    "title": "Pharmaceutical Testing",
+    "gradient": "bg-linear-to-tr from-brand-cyan to-brand-blue",
+    "image": "images/food_testing_gen.png",
+    "caption": "Unwavering commitment to delivering unparalleled pharmaceutical and laboratory testing services."
+  },
+  {
+    "title": "Textile and Apparel Testing",
+    "gradient": "bg-linear-to-br from-brand-green-light to-brand-green",
+    "image": "leather.jpg",
+    "caption": "Comprehensive range of textile, fabric, and garment testing covering the spectrum from yarn to finished goods."
+  },
+  {
+    "title": "Toy and Children Product Testing",
+    "gradient": "bg-linear-to-bl from-brand-cyan-light to-accent",
+    "image": "inspection.jpg",
+    "caption": "Taking the lead in offering comprehensive suites of safety and compliance testing for children's products."
+  },
+  {
+    "title": "Consumer and Cosmetic Products Testing",
+    "gradient": "bg-linear-to-tl from-brand-cyan to-brand-green-light",
+    "image": "certification.jpg",
+    "caption": "Delivering specialized testing to verify safety, efficacy, and regulatory compliance for cosmetics and consumer goods."
+  }
+]
