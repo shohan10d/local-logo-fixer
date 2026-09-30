@@ -82,8 +82,8 @@ const UPCOMING = [
     title: "Global Textiles & Apparel Compliance Summit",
     location: "Dhaka, Bangladesh",
     image: "/leather.jpg",
-    imageWidth: 1920,
-    imageHeight: 1080,
+    imageWidth: 640,
+    imageHeight: 425,
   },
   {
     date: "22 October 2026",
