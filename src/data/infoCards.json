@@ -1,25 +1,25 @@
 [
   {
     "title": "Advanced Testing",
-    "image": "food-testing.png",
+    "image": "food-testing.webp",
     "description": "Precise analytical testing across diverse industries to ensure product safety, quality, and regulatory compliance.",
     "gradient": "bg-linear-to-br from-brand-blue to-brand-cyan"
   },
   {
     "title": "Industrial Inspection",
-    "image": "inspection.jpg",
+    "image": "inspection.webp",
     "description": "Comprehensive on-site inspections and surveillance to verify technical requirements and quality standards at every stage.",
     "gradient": "bg-linear-to-bl from-accent to-brand-cyan-light"
   },
   {
     "title": "Global Certification",
-    "image": "certification.jpg",
+    "image": "certification.webp",
     "description": "Expert certification services to help your products and systems gain market access and demonstrate excellence worldwide.",
     "gradient": "bg-linear-to-tr from-brand-blue to-brand-green-light"
   },
   {
     "title": "Specialized Training",
-    "image": "training.jpg",
+    "image": "training.webp",
     "description": "Empower your team with industry-leading knowledge and skills needed to maintain the highest safety and quality standards.",
     "gradient": "bg-linear-to-tl from-brand-cyan to-brand-green"
   }
