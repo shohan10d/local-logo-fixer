@@ -87,6 +87,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { name: "author", content: "TICAdvisor" },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "TICAdvisor" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
@@ -98,6 +99,31 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap",
       },
       { rel: "icon", href: "/favicon.png", type: "image/png" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "/#organization",
+              name: "TICAdvisor",
+              description:
+                "Testing, inspection and certification services for global supply chains.",
+              email: "contact@ticadvisor.com",
+            },
+            {
+              "@type": "WebSite",
+              "@id": "/#website",
+              name: "TICAdvisor",
+              publisher: { "@id": "/#organization" },
+              inLanguage: "en",
+            },
+          ],
+        }),
+      },
     ],
   }),
   shellComponent: RootShell,

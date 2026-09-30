@@ -29,9 +29,20 @@ export const Route = createFileRoute("/services")({
         content:
           "Laboratory testing, field inspection, product certification, auditing, consulting and training services from TICAdvisor.",
       },
+      { property: "og:url", content: "/services" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:title",
+        content: "Services — Testing, Inspection & Certification | TICAdvisor",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Laboratory testing, field inspection, product certification, auditing, consulting and training services from TICAdvisor.",
+      },
     ],
+    links: [{ rel: "canonical", href: "/services" }],
   }),
   component: ServicesPage,
 });
