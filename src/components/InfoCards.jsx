@@ -14,7 +14,11 @@ function InfoCards() {
                 <img
                   src={`/${card.image}`}
                   alt={card.title}
-                  loading="lazy"
+                  width={card.image === "inspection.webp" ? 950 : card.image === "food-testing.webp" ? 599 : 900}
+                  height={card.image === "inspection.webp" ? 352 : card.image === "food-testing.webp" ? 447 : card.image === "certification.webp" ? 683 : 601}
+                  loading={idx === 0 ? "eager" : "lazy"}
+                  fetchPriority={idx === 0 ? "high" : "auto"}
+                  decoding="async"
                   className="h-full w-full object-cover"
                 />
               </div>
