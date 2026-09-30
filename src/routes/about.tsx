@@ -22,6 +22,8 @@ export const Route = createFileRoute("/about")({
         content:
           "Who we are: a global testing, inspection and certification partner helping companies prove quality, safety and compliance.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: AboutPage,

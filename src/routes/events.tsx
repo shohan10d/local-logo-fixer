@@ -21,6 +21,8 @@ export const Route = createFileRoute("/events")({
         content:
           "Join TICAdvisor at trade shows, technical webinars and training workshops on testing, inspection and certification.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: EventsPage,

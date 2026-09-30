@@ -21,6 +21,8 @@ export const Route = createFileRoute("/contact")({
         content:
           "Get in touch with TICAdvisor for testing, inspection, certification and training enquiries.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: ContactPage,
